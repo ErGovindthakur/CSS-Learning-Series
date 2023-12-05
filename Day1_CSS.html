@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Introduction of CSS (CaseCading Style-Sheet)</title>
+    <style>
+        /* Internal css */
+        h1{
+            color:rgba(255, 0, 0, 0.72);
+            font-size: 32px;
+        }
+        h1:hover{
+            color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction of CSS (CaseCading Style-Sheet)</h1>
+    <details>
+        <summary>What is CSS?</summary>
+        <span>CSS is a style-sheet language used to describe the look and presentation of our document which is written in HTML or XML. It defines how elements are displayed on a web-page <br /> It makes our website visually and appealing and user-friendly.</span>
+    </details>
+    <details>
+        <summary>Creators and Css Maintencnace?</summary>
+        <span>CSS was created by a group of individuals known as the (World Wide Web Consortiun)_---W3C</span>
+    </details>
+    <details>
+        <summary>CSS History of CSS to CSS3</summary>
+        <span>CSS1(1996)-Limited properties and selectors</span>
+        <span>CSS2(1998)-It was not released officially</span>
+        <span>CSS3(2011)-It is the advance of version of css</span>
+    </details>
+    <details>
+        <summary>CSS rule and structure</summary>
+        <span> 1)  A CSS consist of a selector and a declearation block</span>
+        <br />
+        <span>2)  Declaration are used to define the style properties for the selected elements</span>
+<br />
+<span>
+    3)  Each declaration consist of a property and a value
+</span>
+<pre style="font-weight: 800;">
+    selector{
+        property: value;
+        /*More property and values*/
+    }
+    Example-:(Syntax of CSS3)
+    h1{
+        color: red;
+        font-size: 32px;
+    }
+</pre>
+    </details>
+    <details>
+        <summary>How to use CSS in our html</summary>
+        <span>Inline CSS</span>
+        <br />
+        <span>Internal CSS</span>
+        <br />
+        <span>External CSS</span>
+    </details>
+    <details>
+        <summary>What are selectors in CSS</summary>
+        <span>Generally selectors are used to select that element to be style</span>
+        <br />
+        <span>They are mainly three types</span>
+        <pre>
+            1) Tag/Element selector
+            Eg-: 
+            h1{
+                color: red;
+                font-size: 32px;
+            }
+            2) Class selector- it is emplimented using (.btn)
+            Eg-: 
+            .bnt{ //btn is a class here//
+                color: red;
+                font-size: 32px;
+            }
+            3) Id selector -: It is implemented by using (#) symbol
+            Eg-:
+            #bnt{ //btn is a ID  here bcz of # symbol//
+                color: red;
+                font-size: 32px;
+            }
+            4) Pseudo selector -: It is implemented by using (:) symbol
+            Eg-:
+            #bnt:hover{ //btn is a ID  here bcz of # symbol//
+                color: red;
+                font-size: 32px;
+            }
+        </pre>
+    </details>
+    <details>
+        <summary>
+            What is comment in css?
+        </summary>
+        <span>Generally comments are the block of statement which helps developer to understand the code feasibility of our website/software</span>
+<pre>
+    Multi-line comment
+    Eg-: 
+    /*   This is code is working on the Navigation part of our website   */ 
+</pre>
+    </details>
+    <h1>Let's Start</h1>
+    <!-- Inline css -->
+    <p><span style="color: green; font-size: 27px;">Now explore designing....</span> adipisicing elit. Laborum, ratione officia a iste vel rerum, vitae maxime, maiores consequuntur mollitia ipsam magni. Inventore eligendi magnam architecto minima eius impedit maiores tempore nam quam id repellat, ducimus cum nobis. Quas, perferendis laborum voluptatem corrupti asperiores a facere, distinctio eum sit excepturi sunt porro necessitatibus. Quod est fuga, consequuntur aut dicta quo illo eos totam quis corporis nemo placeat cumque obcaecati a voluptatem vero quisquam, temporibus molestias rem? Accusamus odit maiores totam similique fugit veniam eaque explicabo qui iste aspernatur quod error voluptatibus corporis, laborum officiis libero ex dignissimos temporibus molestias!</p>
+    <br />
+    <section>
+        <a href="#" class="btn">Subscribe</a>
+    </section>
+    <h1>Let's Learn colors in css---- (This is the most important part of our website ) <span>Use the website <q style="color: rgba(0, 0, 255, 0.81);"">Color Hunt</q> to selet Attractive color</span></h1>
+    <p style="color: brown; font-size: 18px;">
+    <pre style="font-weight: bold; font-size: 16px;">
+     RGB ---CSS
+        1) RED -- #FF0000 (Hex-code)
+               255, 0 ,0 (rgb value) 
+
+        2) GREEN --#00FF00 (Hex-code)
+                 0, 255, 0 (rgb value)  
+
+        3) BLUE --#0000FF (Hex-code)
+                  0, 0, 255  (rgb value) 
+
+                  Note--( RGB = 255, 0, 255)
+        4)Alpha-channel
+             Eg-: 0, 255, 0, 1 (rgba value where a represents the alpha value of our color it used to increase or decrease the opacity of our color)         
+    </pre>
+    </p>
+    <section class="add">
+        <p>In industry level all the developers used only the Hex-code and rgb and rgba color</p>
+    </section>
+</body>
+</html>
