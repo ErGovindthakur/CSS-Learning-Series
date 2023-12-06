@@ -16,3 +16,7 @@ backgroung-image property
 1) background-size
 1) background-attachment (Thank you!)
 </pre>
+<br/>
+Day-3 We have studied all about units in css
+<br />
+What is px, em , rem;
