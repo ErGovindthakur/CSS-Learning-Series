@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring gradient in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100vh;
+        }
+        section{
+            width: 100%;
+            height:100vh;
+            /* background:linear-gradient(red,yellow); */
+            /* background: linear-gradient(to left, red,yellow); */
+            /* background: linear-gradient(to right, red,yellow); */
+            /* background: linear-gradient(90deg, red,yellow); */
+            background: linear-gradient(to top left,red,yellow);
+            /* background: linear-gradient(to bottom right,red, yellow); */
+        }
+        p{
+            font-size: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            color: #fff;
+            font-weight: bolder;
+         text-shadow: 2px 1px #fff;
+         background-attachment: fixed;
+        }
+        .tackle{
+            width: 100%;
+            height: 100vh;
+            background: repeating-linear-gradient(45deg, hotpink,royalblue 90px);
+            background-attachment: fixed;
+        }
+        .tackle-again{
+            width: 100%;
+            height: 100vh;
+            background: repeating-linear-gradient(54deg, lightseagreen,magenta,cyan 120px);
+            background-attachment: fixed;
+        }
+        .tackle-again-again{
+            width: 100%;
+            height: 100vh;
+            background:radial-gradient(circle,hotpink 45% ,royalblue 35%,magenta 20% 180px)
+        }
+    </style>
+</head>
+<body>
+    <section>
+<p>Linear-Gradient-Property</p>
+    </section>
+    <section class="tackle">
+<p> Repeating Linear-Gradient-Property</p>
+    </section>
+    <section class="tackle-again">
+<p> Repeating Linear-Gradient-Property practicing</p>
+    </section>
+    <section class="tackle-again-again">
+<p> Radinal-Linear-Gradient-Property practicing</p>
+    </section>
+</body>
+</html>
