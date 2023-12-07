@@ -20,3 +20,7 @@ backgroung-image property
 Day-3 We have studied all about units in css
 <br />
 What is px, em , rem;
+<br />
+Day-4 and Day-5 
+<br />
+We learnt about font and text and box model in css
