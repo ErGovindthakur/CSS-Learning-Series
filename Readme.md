@@ -24,3 +24,11 @@ What is px, em , rem;
 Day-4 and Day-5 
 <br />
 We learnt about font and text and box model in css
+<br />
+Day6 and Day7
+<br />
+Today we have studied about gradient and box -shadow and other properties in css
+<br />
+Day8 , Day9 and Day10 
+<br />
+Today i explore the Drop-shadow and combinators and list-style and Filters and Anchor tag properties in css
