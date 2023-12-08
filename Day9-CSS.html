@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is all about list style in css</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        html,body{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to top, #5b697a, #5b697a 50%),
+            linear-gradient(to buttom, #fafbfd, #fafbfd 50%);
+            background-size: 100% 50%, 100% 50%;
+            background-repeat: no-repeat;
+            display: grid;
+            place-items: center;
+        }
+        .list{
+            width: 500px;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 2.4) 0px 3px 8px;
+            -webkit-border-radius:10px;
+            -moz-border-radius:10px;
+            -ms-border-radius:10px;
+            -o-border-radius:10px;
+        }
+        ul{
+list-style-type: upper-alpha;
+list-style-position: inside;
+/* list-style-image: url('./bgc.jpg'); */
+        }
+        li{
+            font-size: 32px;
+            font-weight: 400;
+            text-transform: capitalize;
+            margin-bottom: 16px;
+            border: 2px solid #ff0000;
+            position: relative;
+        }
+        .achor a{
+            margin: 18px;
+            border: 2px solid black;
+            border-radius: 2.4px;
+            padding: 3.5px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #7d1409;
+            font-weight: bold;
+        }
+        .achor a:hover{
+            color: #ff0000;
+            font-weight: bold;
+            background-color: #fafbfd;
+            box-shadow: 4px 5px 1px #5b697a;
+            transition: 0.72s;
+        }
+        .achor a:visited{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .achor a:active{
+            color: #fafbfd;
+            background-color: #000;
+            font-size: 16px;
+            padding: 4.5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Here we are going to Explore the list properties in css.</h1>
+    <section>
+     <div class="list">
+         <ul>
+             <li>Like</li>
+             <li>Share</li>
+             
+                 <ul>
+
+                     <li>Active-learner</li>
+                     <li>Good -Boy</li>
+                     <li>Amazing-Man</li>
+                 </ul>
+             </li>
+             <li>Subscribe</li>
+         </ul>
+     </div>
+    </section>
+    <h1 id="great">Also Exploring Anchor tag in this file</h1>
+    <div class="achor">
+        <a href="#" onclick="myfun()">This is the link</a>
+        <a href="#" onclick="myfunshow()">This is the link</a>
+    </div>
+    <script>
+        function myfun(){
+            // document.getElementById("great").innerHTML="Here we have learn all the thing about anchor tag. Thank you!";
+            // document.getElementById("great").style.fontSize="45px";
+            // document.getElementById("great").style.color="rgb(255,0,255)";
+            document.getElementById("great").style.display="none";
+        }
+        function myfunshow(){
+            document.getElementById("great").innerHTML="Here we have learn all the thing about anchor tag. Thank you!";
+            document.getElementById("great").style.fontSize="45px";
+            document.getElementById("great").style.color="rgb(255,0,255)";
+            document.getElementById("great").style.filter="brightness(100%) contrast(500%) opacity(0.9)";
+            document.getElementById("great").style.textShadow="2px 2px 0px #000"
+            document.getElementById("great").style.display="block";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This tutorial fully based on filters in css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+    place-items: center;
+        }
+img{
+    border-radius: 18px;
+    width: 270px;
+    height: 270px;
+
+    /* Here earlier image was colorful but grayscale() Property it's looking like this */
+
+   /* -webkit-filter: grayscale();
+   -webkit-filter: blur(2.5px);
+   -webkit-filter: brightness(180%);
+   -webkit-filter: invert(); */
+   /* -webkit-filter: opacity(0.7); */
+
+   /* We can use multiple filter property in css */
+   -webkit-filter: grayscale() blur(2.5px) opacity(0.9) brightness(100%) invert();
+
+}
+
+/* From here i ma stating the List properties in css */
+.list{
+
+}
+    </style>
+</head>
+<body>
+    <img src="./bgc.jpg" alt="This is a image" srcset="">
+</body>
+</html>
