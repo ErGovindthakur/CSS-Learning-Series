@@ -32,3 +32,7 @@ Today we have studied about gradient and box -shadow and other properties in css
 Day8 , Day9 and Day10 
 <br />
 Today i explore the Drop-shadow and combinators and list-style and Filters and Anchor tag properties in css
+<br />
+Day11 and Day12
+<br />
+Today i have learnt about position in css
