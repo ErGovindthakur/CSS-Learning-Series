@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This toturial fully based on units in css and most important for every web-devloper .</title>
     <style>
+        *{
+            margin: 0;
+            padding: o;
+            box-sizing: border-box;
+        }
+      
 body{
     background-color: hsl(0, 0%, 94%);
+  
 }
 /* Here all the units based on pixels */
 /* h1{
@@ -50,7 +57,10 @@ li{
 /* Here all the units are based on rem units (The most important units to understand) 
 Here we deals with root element like html*/
 html{
-font-size: 32.5%;
+/* font-size: 32.5%; */
+/* font-size: 16px; */
+/* font-size: 100%; */
+font-size: 72%;
 }
 /* Formula-: 1rem=10px (bcz parent has font-size=10px) */
 /* Look at this
@@ -66,6 +76,45 @@ p{
 li{
     font-size: 4.4rem;
 }
+/* .container{
+background:linear-gradient(to top right, cyan, magenta);
+border: 2px solid #444;
+width: 1420px;
+height: 450px;
+margin: 18px;
+} */
+.container{
+background:linear-gradient(to top right, cyan, magenta);
+border: 2px solid #444;
+/* width: 1420px; */
+width: 80vw;
+/* height: 450px; */
+font-size: 22.5px;
+height: 45vh;
+margin: 18px auto;
+}
+.container > p{
+    width: 80vw;
+    height: 45vh;
+    display: grid;
+    place-items: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* font-size: 45px; */
+/* font-size: 2em; */
+font-size: 4rem;
+    font-weight: bold;
+    text-shadow: -11px 8px 1px #444;
+    color: #fff;
+    text-transform: uppercase;
+}
+.mycount{
+    background-color: green;
+    color: rgb(192, 201, 20);
+    font-size: 22px;
+    width: 100vmin;
+}
     </style>
 </head>
 <body>
@@ -79,6 +128,17 @@ li{
                 This is text
             </li>
         </ul>
+    </div>
+    <h2>Let's understand px and vh , vw by using a box</h2>
+    <div class="container">
+       <p> I am a container</p>
+    </div>
+    <div class="container">
+<p>I am also a container.</p>
+    </div>
+    <p>Another important units in css v-min and v-max</p>
+    <div class="mycount">
+        I am another container.
     </div>
 </body>
 </html>
