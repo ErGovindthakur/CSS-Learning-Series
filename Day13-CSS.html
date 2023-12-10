@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position and Z-index </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100vh;
+        }
+        .type{
+            width: 80%;
+            height: 16%;
+            background-color: green;
+            box-shadow: 2px 3px 2px #111;
+            position:sticky;
+            top: 0;
+            margin: 45px auto;
+            /* display: flex;
+            justify-content: center; */
+            z-index: 6;
+        }
+        .expo{
+            width: 80%;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            /* display: grid;
+            place-items: center; */
+            background-color: hsl(0, 0%, 94%);
+           box-shadow: 2px 3px 1px #000;
+           margin: 10% auto;
+     
+        }
+        h1{
+color: darkblue;
+text-shadow: 2px 2px 1px #444;
+        }
+        .true{
+            width: 54%;
+            height: 45vh;
+            background: linear-gradient(to to right, cyan,magenta);
+            box-shadow: 2px 2px 1px #111;
+            background-color: greenyellow;
+            position: relative;
+          
+        }
+        .child{
+            height: 45px;
+            width: 45px;
+            color: white;
+            position: absolute;
+
+        }
+        .child-1{
+            background-color: red;
+            z-index: 1;
+            /* position: absolute;
+            top: 0;
+            right: 0; */
+        }
+        .child-2{
+            background-color: rgb(255, 0, 230);
+            z-index: 2;
+            /* position: absolute;
+            bottom: 0;
+            left: 0; */
+        }
+        .child-3{
+            background-color: rgb(198, 218, 20);
+            z-index: 3;
+            position: fixed;
+            left: 0;
+            /* position: absolute;
+            top: 0;
+            left: 0; */
+        }
+        .child-4{
+            background-color: rgb(29, 141, 105);
+            z-index: 4;
+            /* position: absolute;
+            bottom: 0;
+            right: 0; */
+        }
+       .child-5{
+            background-color: rgb(180, 33, 221);
+            z-index: 5;
+            /* margin: 30% auto; */
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="type">
+
+    </div>
+    <div class="expo">
+    <h1>In this toturial i will make myself understand position and Z-index. </h1>
+    <div class="true">
+        <div class="child child-1">Box-1</div>
+        <div class="child child-2">Box-2</div>
+        <div class="child child-3">Box-3</div>
+        <div class="child child-4">Box-4</div>
+        <div class="child child-5">Box-5</div>
+    </div>
+    </div>
+    <div class="expo">
+
+    </div>
+</body>
+</html>
