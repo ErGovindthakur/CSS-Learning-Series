@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Again Learning the concept of Flex-box </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            width: 100%;
+            height: 100vh;
+        }
+        .main-heading{
+            font-size: 6.2rem;
+            color: #1e1403;
+            margin: 3rem 0;
+        }
+        .Flex-container{
+            width: 60%;
+            /* height: 600px; */
+            height: auto;
+            padding: 50px 0;
+            margin: 0 auto;
+            box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            background:linear-gradient(to right,cyan, hotpink);
+            color:#fff;
+
+
+            /* Flex-box container properties */
+            display: flex;
+            /* flex-direction: column;  */
+            flex-direction: row; /* (By default) */
+            /* flex-direction: row-reverse; */
+            justify-content: flex-start; /*(By default) */
+            /* justify-content: flex-end; */
+            
+            /* justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly; */
+            justify-content: center;
+
+            
+            /* align-items: flex-end;
+            align-items: stretch; */
+            /* align-items: center; */
+            gap: 24px;
+
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        .item{
+            min-width: 200px;
+            height: 100px;
+            /* aspect-ratio: 1; */
+            background: linear-gradient(to right top, blue,green,yellow);
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+font-size: 32px;
+flex: 1;
+        }
+         .item-2{
+            /* height: 500px; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 5; */
+        } 
+    .item-3{
+        /* flex-basis: 200px; */
+        /* align-self: center; */
+    }
+    </style>
+</head>
+<body>
+    <h1 class="main-heading">CSS Flex-Box (Flexible box layout)</h1>
+    <hr />
+    <br />
+    <section class="Flex-container">
+        <div class="item item-1">Item-1</div>
+        <div class="item item-2">Item-2</div>
+        <div class="item item-3">Item-3</div>
+        <div class="item item-4">Item-4</div>
+        <!-- For the flex wrap Adding 4 more divs -->
+        <div class="item item-1">Item-5</div>
+        <div class="item item-2">Item-6</div>
+        <div class="item item-3">Item-7</div>
+        <div class="item item-4">Item-8</div>
+       
+    </section>
+</body>
+</html>
